@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+    font-family: Gotham Rounded;
+}
+header {
+    display: flex;
+    flex-wrap:wrap;
+}
+
+header .View-high-scores-left {
+    flex-basis: 50%;
+    flex-direction: row;
+    padding: 40px;
+    background-color:rgb(247, 240, 255);
+}
+
+
+header .Time {
+
+    flex-basis: 50%;
+    flex-direction: row;
+    border: 50px;
+    background-color: rgb(247, 240, 255);
+    text-align: right;
+    padding: 40px;
+}
+
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+
+
+p {
+    text-align: center;
+}
+
+
+
+main .title {
+    text-align: center;
+    background-color: rgb(182, 176, 187);
+}
+
+
+
+main .button {
+    text-align: left;
+    height: 50px;
+    align-items: space-evenly;
+    max-width: 80%;
+
+}
+
+
+
+main .start-button {
+
+    border-radius: 8px;
+    color: #13293d;
+    cursor: pointer;
+    font-size: 2em;
+    letter-spacing: 0.21px;
+    line-height: 16px;
+    max-width: 255px;
+    padding: 20px 52px;
+    text-align: center;
+    transition-duration: 0.15s;
+    transition-property: background-color;
+    transition-timing-function: linear;
+    margin-top: 0.6em;
+}
