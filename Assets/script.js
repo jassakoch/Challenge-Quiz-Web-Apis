@@ -103,7 +103,8 @@ function nextQuestion() {
         console.log("game over")
         return
 
-    } else if  (){
+    } 
+    /*else if  (){
 
         questionEl.textContent = questionArray[trackingNumber].question;
         multipleChoiceOption1.textContent = questionArray[trackingNumber].choiceA;
@@ -113,9 +114,10 @@ function nextQuestion() {
         console.log('Started');
 
     }
+    */
 }
 
-    //When user selects answer a messaage will appear correct or wrong
+    //When user selects answer a message will appear correct or wrong
     //increase score and increase tracking number and display new set of questions
     function selectAnswer(event) {
         if (event.target.textContent == questionArray[trackingNumber].answer) {
