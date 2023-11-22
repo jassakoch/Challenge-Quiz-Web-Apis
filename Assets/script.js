@@ -98,13 +98,12 @@ multipleChoiceOption4.addEventListener("click", selectAnswer);
 //need for loop for next question?
 function nextQuestion() {
     //have to have if statement to check if statement that they went index not greater than 3 then game over, if lower then display next question
-    if (questionArray[trackingNumber] < 3) {
-        anyMultipleChoiceButton.addEventListener("click")
+    if (trackingNumber >= 4) {
         console.log("game over")
         return
-
+        //game over logic here
     } 
-    /*else if  (){
+    else{
 
         questionEl.textContent = questionArray[trackingNumber].question;
         multipleChoiceOption1.textContent = questionArray[trackingNumber].choiceA;
@@ -114,7 +113,7 @@ function nextQuestion() {
         console.log('Started');
 
     }
-    */
+    
 }
 
     //When user selects answer a message will appear correct or wrong
@@ -122,11 +121,18 @@ function nextQuestion() {
     function selectAnswer(event) {
         if (event.target.textContent == questionArray[trackingNumber].answer) {
             console.log("correct answer")
-            //else decrease score and increase tracking number and display next set of questions
-        } else { }
-    
-    }
 
+            //increase score
+            score+=10;
+            console.log(score);
+        } else {
+            //add the decrease time logic here
+            timeLeft -=10;
+
+        }
+        trackingNumber+=1
+        nextQuestion()
+    }
 
 
     //timer will run while the user is answering questons
